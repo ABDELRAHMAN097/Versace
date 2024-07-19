@@ -1,45 +1,44 @@
-
 [
     {
         "id":1,
         "name":"jacket",
         "price":2220,
-        "imgurl":"../../public/imags/jacket.jpg"
+        "imgurl":"/public/imags/jacket.jpg"
     },
     {
         "id":2,
         "name":"bag",
         "price":150,
-        "imgurl":"../../public/imags/bag.jpg"
+        "imgurl":"/public/imags/bag.jpg"
     }, {
         "id":3,
         "name":"boots",
         "price":233.03,
-        "imgurl":"../../public/imags/boots.jpg"
+        "imgurl":"../asets/boots.jpg"
     }, {
         "id":4,
         "name":"pants",
         "price":600,
-        "imgurl":"../../public/imags/pants.jpg"
+        "imgurl":"/public/imags/pants.jpg"
     }, {
         "id":5,
         "name":"beige shirt",
         "price":450,
-        "imgurl":"../../public/imags/shirt (2).jpg"
+        "imgurl":"../asets/shirt (2).jpg"
     }, {
         "id":6,
         "name":"shirt",
         "price":300,
-        "imgurl":"../../public/imags/shirt.jpg"
+        "imgurl":"../asets/shirt.jpg"
     }, {
         "id":7,
         "name":"swept",
         "price":30,
-        "imgurl":"../../public/imags/swept.jpg"
+        "imgurl":"../asets/swept.jpg"
     }, {
         "id":8,
         "name":"t-shirt",
         "price":280,
-        "imgurl":"../../public/imags/t-shirt.jpg"
+        "imgurl":"../asets/t-shirt.jpg"
     }
 ]

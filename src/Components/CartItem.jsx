@@ -4,7 +4,7 @@ import StoreItems from "../Data/StoreItems.json";
 import { useShopingCart } from "../Context/ShopingCartContext";
 
 const CartItem = ({ id, quantity }) => {
-  const {removiItem} = useShopingCart();
+  const {removeItem} = useShopingCart();
   const item = StoreItems.find((i) => i.id === id);
   if (item == null) return null;
   return (
@@ -12,7 +12,7 @@ const CartItem = ({ id, quantity }) => {
       <img
         src={item.imgurl}
         alt="cart-img"
-        style={{ width: "125px", hight: "75px", objectFit: "cover" }}
+        style={{ width: "125px", height: "75px", objectFit: "cover" }}
       />
       <div className="me-auto">
         <div>
@@ -30,7 +30,7 @@ const CartItem = ({ id, quantity }) => {
 
       </div>
             <div>{item.price * quantity}</div>
-      <button className="btn btn-outline-danger" size="sm" onClick={() => removiItem(id)}>
+      <button className="btn btn-outline-danger" size="sm" onClick={() => removeItem(id)}>
               &times;
       </button>
       

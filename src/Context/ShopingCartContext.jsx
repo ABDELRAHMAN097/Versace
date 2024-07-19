@@ -2,6 +2,9 @@ import React, { useState, createContext, useContext } from "react";
 import ShopingCart from "../Components/ShopingCart";
 
 const ShopingCartContext = createContext("");
+// const initiealCartItem = localStorage.getItem("shoping-cart")
+//   ? JSON.parse(localStorage.getItem("shoping-cart"))
+//   : [];
 
 const ShopingCartProvider = ({ children }) => {
   const [CartItems, setCartItems] = useState([]);
@@ -10,6 +13,9 @@ const ShopingCartProvider = ({ children }) => {
   const openCart = () => {
     setIsOpen(true);
   };
+  // useEffect(() => {
+  //   localStorage.setItem("shoping-cart", JSON.stringify(CartItems));
+  // }, [CartItems]);
   const closeCart = () => {
     setIsOpen(false);
   };

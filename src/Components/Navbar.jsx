@@ -22,7 +22,7 @@ const Navbar = () => {
           className="rounded-circle"
           style={{ width: "3rem", height: "3rem", position: "relative" }}
         >
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i className="fa-solid fa-cart-shopping"></i>
           <div
             className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
             style={{
