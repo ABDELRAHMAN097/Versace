@@ -1,7 +1,16 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-
+import { CgAdidas } from "react-icons/cg";
+import { FaSearch } from "react-icons/fa";
+import { IoPersonOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
+import { IoBagHandleOutline } from "react-icons/io5";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import Signup from "./signup/page";
+import Signin from "./signin/page";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,17 +22,41 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav style={{
-          padding: "20px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          borderBottom: "#333 solid 1px",
-          color: "black"
-        }}>
-          <Link href="/">home</Link>
-          <Link href="/dashboard">dashboard</Link>
-          <Link href="/ProductList">ProductList</Link>
+
+        <div className="head">
+          <div className="social">
+            <span><FaFacebook className="social-icon" /></span>
+            <span><FaInstagram className="social-icon" /></span>
+            <span><FaTiktok className="social-icon" /></span>
+          </div>
+          <div>
+            <h1>Free Shipping This Week Order Over - $55</h1>
+          </div>
+        </div>
+
+        <header className="header">
+          <div className="logo"><CgAdidas /></div>
+          <div className="search">
+            <input className="search-info" type="text"/>
+            <FaSearch className="search-icon" />
+          </div>
+          <div className="icons">
+          <IoPersonOutline />
+          <FaRegHeart />
+          <IoBagHandleOutline />
+          </div>
+        </header>
+
+        <nav className="nav">
+          <Link className="link" href="/">Home</Link>
+          <Link className="link" href="/">Categories</Link>
+          <Link className="link" href="/">Men's</Link>
+          <Link className="link" href="/">Women's</Link>
+          <Link className="link" href="/">Blog</Link>
+          <Link className="link" href="/">Hot Offers</Link>
+          <Link className="link" href="/dashboard">dashboard</Link>
+          <Link className="link" href="/signin">signin</Link>
+          <Link className="link" href="/signup">signup</Link>
         </nav>
         {children}
       </body>
