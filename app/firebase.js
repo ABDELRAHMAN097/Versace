@@ -4,7 +4,6 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDSZTc4kScdz4bw2INg53LZkOkHS8UXDPA",
   authDomain: "athe-7e059.firebaseapp.com",

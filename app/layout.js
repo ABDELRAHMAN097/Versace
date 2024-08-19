@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
             <span><FaTiktok className="social-icon" /></span>
           </div>
           <div>
-            <h1>Free Shipping This Week Order Over - $55</h1>
+            <h1 className="lg:text-xs">Free Shipping This Week Order Over - $55</h1>
           </div>
         </div>
 
@@ -41,7 +41,10 @@ export default function RootLayout({ children }) {
             <FaSearch className="search-icon" />
           </div>
           <div className="icons">
+          <Link className="link" href="/signup">
           <IoPersonOutline />
+          </Link>
+
           <FaRegHeart />
           <IoBagHandleOutline />
           </div>
@@ -50,13 +53,8 @@ export default function RootLayout({ children }) {
         <nav className="nav">
           <Link className="link" href="/">Home</Link>
           <Link className="link" href="/">Categories</Link>
-          <Link className="link" href="/">Men's</Link>
-          <Link className="link" href="/">Women's</Link>
-          <Link className="link" href="/">Blog</Link>
-          <Link className="link" href="/">Hot Offers</Link>
           <Link className="link" href="/dashboard">dashboard</Link>
           <Link className="link" href="/signin">signin</Link>
-          <Link className="link" href="/signup">signup</Link>
         </nav>
         {children}
       </body>
